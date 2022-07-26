@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<%- include('../partials/head.ejs') %>
+
+<body>
+
+    <!-- Header -->
+    <%- include('../partials/header.ejs') %>
+
+    <main>
+
+        <section class="main-carrito">
+            <h2>CARRITO DE COMPRA<i class="fa-solid fa-cart-shopping"></i></h2>
+            <section class="detalle-carrito">
+                <div class="carrito-table-container">
+                    <table class="carrito-table">
+                        <thead>
+                            <tr>
+                                <td class="carrito-table-image">Tu producto</td>
+                                <td class="carrito-table-description">Nombre de producto</td>
+                                <td class="carrito-table-price">Precio</td>
+                                <td class="carrito-table-quantity">Cantidad</td>
+                                <td class="carrito-table-total">Total</td>
+                                <td class="carrito-table-delete">Borrar</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="carrito-table-image"><img src="/images/img-mascara-fullface.jpg"
+                                        alt="Imagen de producto"></td>
+                                <td class="carrito-table-description">
+                                    <p>Mascara Full Face</p>
+                                </td>
+                                <td class="carrito-table-price">$ 28.528</td>
+                                <td class="carrito-table-quantity"><input type="number"
+                                        class="product-quantity" name="product-quantity" placeholder="1">
+                                </td>
+                                <td class="carrito-table-total">$ 28.528</td>
+                                <td class="carrito-table-delete"><a href="#"><i class="fa fa-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="carrito-table-image"><img src="/images/img-filtro-201b2.jpg"
+                                        alt="Imagen de producto"></td>
+                                <td class="carrito-table-description">
+                                    <p>Repuesto de mascara de gas</p>
+                                </td>
+                                <td class="carrito-table-price">$ 900</td>
+                                <td class="carrito-table-quantity"><input type="number"
+                                        class="product-quantity" name="product-quantity" placeholder="1">
+                                </td>
+                                <td class="carrito-table-total">$ 900</td>
+                                <td class="carrito-table-delete"><a href="#"><i class="fa fa-trash"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="carrito-bottom">
+                    <div class="total-price-container">
+                        <div class="total-price">
+                            <p> Precio total : $ 29,428</p>
+                        </div>
+                    </div>
+                    <div class="return">
+                        <p><a href="/"><i class="fa fa-arrow-left"></i> ¡Continuar comprando!</a></p>
+                    </div>
+                    <div class="confirm-carrito">
+                        <p><a href="#">Confirma tu compra</a></p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <%- include('../partials/footer.ejs') %>
+
+</body>
+
+</html>

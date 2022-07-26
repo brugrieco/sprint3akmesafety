@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Head -->
+<%- include('../partials/head.ejs') %> 
+
+<body>
+
+    <!-- Header -->
+    <%- include('../partials/header.ejs') %> 
+
+    <main class="productDetail-main">
+
+        <section class="productDetailSection">
+            <figure>
+                <img src="/images/<%= product.image %>" width=250px alt="<%= product.name %>">
+            </figure>
+        </section>
+
+        <section class="productDetailInfo">
+
+            <h4 class="name"><%= product.name %></h4>
+            <p class="price"><%= product.price %></p>
+            <p class="description"><%= product.description %></p>
+
+            <div class="form-buttons">
+                <button type="submit" class="submit-button">AGREGAR AL CARRITO</button>
+                <button type="submit" class="submit-button">VOLVER AL LISTADO</button>
+                <a href="/productEdit/<%= product.id %>"><button type="submit" class="submit-button">EDITAR PRODUCTO</button></a>
+            </div>
+
+        </section>        
+
+    </main>   
+
+    <!-- Footer -->
+    <%- include('../partials/footer.ejs') %> 
+    
+</body>
+</html>
