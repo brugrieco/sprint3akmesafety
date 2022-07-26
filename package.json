@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brugrieco/akmesafety_sprint3.git"
+    "url": "git+https://github.com/brugrieco/sprint3akmesafety.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brugrieco/akmesafety_sprint3/issues"
+    "url": "https://github.com/brugrieco/sprint3akmesafety/issues"
   },
-  "homepage": "https://github.com/brugrieco/akmesafety_sprint3#readme",
+  "homepage": "",
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.1"
